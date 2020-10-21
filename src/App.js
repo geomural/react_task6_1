@@ -21,7 +21,7 @@ function App() {
       return;
     }   
 
-    let newClock = {id: name, clock: <Clock key={name} name={name} zone={zoneInt} removeClock={removeClock}/>};
+    let newClock = {id: name, zone: zoneInt};
 
     if (clockGroup.length > 0) {
       setClockGroup(prevState => [...prevState, newClock]);
@@ -39,7 +39,7 @@ function App() {
     <>
       <WorldClock addClock={addClock}/>
       <div id="clockGroup">
-        {clockGroup.map(el => el.clock)}
+        {clockGroup.map(el => <Clock key={el.id} name={el.id} zone={el.zone} removeClock={removeClock}/>)}
       </div>
     </>
   );
