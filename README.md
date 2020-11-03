@@ -32,3 +32,5 @@
 <li>Посмотреть текущий TimezoneOffset вы можете используя объект Date</li>
 <li>Можете использовать библиотеку momentjs.</li>
 </ul>
+
+<i>Исходное задание: https://github.com/netology-code/ra16-homeworks/tree/master/lifecycle-http/watches</i>
